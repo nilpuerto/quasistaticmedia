@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Quasistatic Media</title>
+  <link rel="icon" type="image/icon" href="95012761_2635299690059167_3549052341359476736_n.ico" />
+
+  <style>
+    .banner {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+    }
+    
+    .banner-black {
+      background-color: rgb(255, 0, 140);
+    }
+    
+    .banner-green {
+      background-color: rgb(255, 0, 140);
+    }
+    
+    .enlaces {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .enlaces li {
+      margin: 0 115px;
+    }
+    
+    .enlaces li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 22px;
+    }
+    
+    .enlaces li {
+      margin: 0 250px;
+    }
+    
+    .banner-wide {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(255, 0, 140);
+      font-size: 60px;
+      background-image: url('background.gif');
+      background-size: cover;
+    }
+    
+    .banner-wide h1 {
+      margin-top: 70px;
+    }
+  </style>
+  <style>
+    .container {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    .photo {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+    }
+    
+    .photo:hover {
+      transform: scale(1.2);
+      filter: grayscale(100%);
+    }
+    
+    .text-container {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      overflow-y: scroll;
+      max-height: 200%;
+    }
+    
+    .fluorescent-text {
+      color: rgb(0, 0, 0);
+    }
+    
+    .animated-lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    
+    .line {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(255, 0, 179);
+      transform-origin: top left;
+      animation: moveLine 3s linear infinite;
+    }
+    
+    @keyframes moveLine {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+  <style>
+    .media-section {
+      background-color: rgb(0, 0, 0);
+      padding: 30px;
+    }
+    
+    .media-section h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: auto;
+      transition: all 0.5s ease;
+    }
+    
+    .image-container:hover img {
+      transform: scale(1.2);
+      filter: grayscale(100%);
+    }
+    
+    .image-description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .image-container:hover .image-description {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="banner banner-black">
+    <ul class="enlaces">
+      <li><a href="#">MARCO PUERTO</a></li>
+      <li><a href="#media">Art</a></li>
+      
+    </ul>
+  </div>
+  
+  <div class="banner banner-wide">
+    <h1>Quasistetic Media</h1>
+  </div>
+  
+  <div class="container">
+    <img src="foto2.jpg" alt="Foto Gigante" class="photo">
+    <div class="text-container">
+      <p>
+        I found I could say things with color and shapes that I couldn't say any other way—things I had no words for. Whatever I can't turn into something wonderful, I let loose. Truth does not excite me. I only engage in drunkenness and euphoria, and when daily existence binds me, I flee in some manner. There will be no more walls.
+      </p>
+      <!-- Continúa con más contenido de texto aquí -->
+    </div>
+    <div class="animated-lines">
+      <div class="line"></div>
+      <div class="line" style="top: 25%;"></div>
+      <div class="line" style="top: 50%;"></div>
+      <div class="line" style="top: 75%;"></div>
+    </div>
+  </div>
+
+  <div class="media-section" id="media">
+    <h2>Quasistatic Media</h2>
+    <div class="image-grid">
+      <div class="image-container">
+        <img src="foto1.jpg" alt="Foto 2">
+        <div class="image-description">Empyre (2022) (10:15 min)
+
+          Directed by @julia.sms
+          
+          Produced by Alex Zosimo
+          
+          Director of Photography by Marco Puerto
+          
+          Edit by Miranda Siegel
+          
+          Production designer by @athleticprowess & @the.abinator 
+          
+          Gaffer by Marco Puerto & @kaitosashiharamartinez & @gynecee_bhavishy_yam
+          
+          Special Effects Makeup Artist by @savjns
+          
+          Color Grading by Marco Puerto
+          
+          Acting by @sjaantrust & @___sarahelise & @____don_pablo_</div>
+      </div>
+      <div class="image-container">
+        <img src="foto3.jpg" alt="Foto 3">
+        <div class="image-description">The Unknown (2021)(4:20 min)
+
+          No link yet
+          
+          Directed by Marco Puerto
+          
+          Produced by Selen 
+          
+          Shot by @im_dissassossaciating
+          
+          Edit by @gha_sabouni
+          
+          Soundrack by @d.marius______
+          
+          Acting by @gold_man_a.o & @francescabussalai</div>
+      </div>
+      <div class="image-container">
+        <img src="foto4.jpg" alt="Foto 4">
+        <div class="image-description">L’home De La Creu(2022)
+          (0:55 min)
+          
+          Directed/Shot by Marco Puerto
+          
+          Produced by @albert.arbat
+          
+          Music by @d.marius______</div>
+      </div>
+      <div class="image-container">
+        <img src="foto5.jpg" alt="Foto 5">
+        <div class="image-description">Primavera (2023)
+          (5:22 min)
+          
+          Directed/Shot/Edit/Color by Marco Puerto</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var textContainer = document.querySelector('.text-container');
+      var scrollPosition = window.scrollY;
+
+      if (scrollPosition > 0) {
+        textContainer.style.animation = 'fadeIn 1s forwards';
+      } else {
+        textContainer.style.animation = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
+  <style>
+    /* ... Código CSS existente ... */
+    
+
+    .photo-large {
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      position: relative;
+      left: 0;
+      animation: movePhoto 5s linear infinite;
+    }
+
+    @keyframes movePhoto {
+      0% {
+        left: 0;
+      }
+      50% {
+        left: 50%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+  </style>
+  
+  <!-- ... Resto del código HTML existente ... -->
+
+  <div class="container" id="Who I am?"> <!-- Contenedor modificado con ancla "whoiam" -->
+    <img src="foto10.jpg" alt="Foto Gigante" class="photo-large"> <!-- Imagen modificada con clase "photo-large" -->
+       <p>
+        Marco Puerto Marquès, Visual Arts
+      </p>
+      <!-- Continúa con más contenido de texto aquí -->
+    </div>
+    <!-- Resto del código HTML existente -->
+  </div>
+
+</body>
+</html>
